@@ -2,47 +2,53 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+/* Modern Apple-like styles */
+@layer components {
+  .header {
+    @apply fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-gray-100;
   }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-  font-smooth: always;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-/* Custom scrollbar */
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  
+  .nav-link {
+    @apply text-gray-600 hover:text-black transition-colors duration-200;
+  }
+  
+  .hero-section {
+    @apply h-screen flex items-center justify-center bg-gray-50;
+  }
+  
+  .hero-title {
+    @apply text-5xl md:text-7xl font-light tracking-tight text-center;
+  }
+  
+  .hero-subtitle {
+    @apply text-xl md:text-2xl text-gray-500 mt-6 max-w-2xl mx-auto text-center;
+  }
+  
+  .btn-primary {
+    @apply px-8 py-3 bg-black text-white rounded-full hover:bg-gray-800 transition-colors duration-200;
+  }
+  
+  .product-card {
+    @apply overflow-hidden rounded-xl bg-gray-50;
+  }
+  
+  .product-image-container {
+    @apply relative overflow-hidden;
+  }
+  
+  .product-image {
+    @apply w-full h-full object-cover transition-transform duration-500;
+  }
+  
+  .product-title {
+    @apply text-lg font-medium mt-4;
+  }
+  
+  .product-price {
+    @apply text-gray-600 mt-1;
+  }
+  
+  .quick-view-btn {
+    @apply absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black text-white px-6 py-2 opacity-0 transition duration-300;
+  }
 }

@@ -12,7 +12,7 @@ const products = [
     id: 1,
     name: 'Premium T-Shirt',
     price: 'RM 129',
-    image: '/placeholder-tshirt.jpg',
+    image: 'https://down-my.img.susercontent.com/file/my-11134207-7ras9-mbtgbn9f6j4nb4.webp',
     category: 'men',
     rating: 4.5
   },
@@ -20,7 +20,7 @@ const products = [
     id: 2,
     name: 'Designer Hoodie',
     price: 'RM 249',
-    image: '/placeholder-hoodie.jpg',
+    image: 'https://down-my.img.susercontent.com/file/my-11134207-7ras9-mbtgbn9f6j4nb4.webp',
     category: 'women',
     rating: 4.8
   },
@@ -28,7 +28,7 @@ const products = [
     id: 3,
     name: 'Classic Jeans',
     price: 'RM 199',
-    image: '/placeholder-jeans.jpg',
+    image: 'https://down-my.img.susercontent.com/file/my-11134207-7ras9-mbtgbn9f6j4nb4.webp',
     category: 'men',
     rating: 4.2
   },
@@ -36,7 +36,7 @@ const products = [
     id: 4,
     name: 'Elegant Dress',
     price: 'RM 299',
-    image: '/placeholder-dress.jpg',
+    image: 'https://down-my.img.susercontent.com/file/my-11134207-7ras9-mbtgbn9f6j4nb4.webp',
     category: 'women',
     rating: 4.9
   },
@@ -44,7 +44,7 @@ const products = [
     id: 5,
     name: 'Casual Shirt',
     price: 'RM 179',
-    image: '/placeholder-shirt.jpg',
+    image: 'https://down-my.img.susercontent.com/file/my-11134207-7ras9-mbtgbn9f6j4nb4.webp',
     category: 'men',
     rating: 4.3
   },
@@ -52,7 +52,7 @@ const products = [
     id: 6,
     name: 'Summer Blouse',
     price: 'RM 159',
-    image: '/placeholder-blouse.jpg',
+    image: 'https://down-my.img.susercontent.com/file/my-11134207-7ras9-mbtgbn9f6j4nb4.webp',
     category: 'women',
     rating: 4.6
   },
@@ -60,7 +60,7 @@ const products = [
     id: 7,
     name: 'Slim Fit Chinos',
     price: 'RM 219',
-    image: '/placeholder-chinos.jpg',
+    image: 'https://down-my.img.susercontent.com/file/my-11134207-7ras9-mbtgbn9f6j4nb4.webp',
     category: 'men',
     rating: 4.4
   },
@@ -68,7 +68,7 @@ const products = [
     id: 8,
     name: 'Silk Scarf',
     price: 'RM 149',
-    image: '/placeholder-scarf.jpg',
+    image: 'https://down-my.img.susercontent.com/file/my-11134207-7ras9-mbtgbn9f6j4nb4.webp',
     category: 'women',
     rating: 4.7
   },
@@ -164,6 +164,9 @@ export default function Shop() {
                     <Image 
                       src={product.image} 
                       alt={product.name}
+                      height={600} 
+                      width={500}
+                      sizes="(max-width: 768px) 100vw, 50vw"
                       className="w-full h-full object-cover group-hover:scale-105 transition duration-500"
                     />
                     <button className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black text-white px-6 py-2 opacity-0 group-hover:opacity-100 transition duration-300 whitespace-nowrap">

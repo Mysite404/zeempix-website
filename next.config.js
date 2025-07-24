@@ -2,7 +2,7 @@
 const nextConfig = {
     reactStrictMode: true,
     images: {
-      domains: ['images.unsplash.com', 'plus.unsplash.com'], // Add domains where you'll host your actual images
+      domains: ['down-my.img.susercontent.com', 'down-my.img.susercontent.com'], // Add domains where you'll host your actual images
     },
   }
   

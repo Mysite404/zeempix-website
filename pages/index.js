@@ -9,115 +9,115 @@ const products = [
     id: 1,
     name: 'Premium T-Shirt',
     price: 'RM 129',
-    image: '/placeholder-tshirt.jpg',
+    image: 'https://down-my.img.susercontent.com/file/my-11134207-7ras9-mbtgbn9f6j4nb4.webp',
     category: 'men'
   },
   {
     id: 2,
     name: 'Designer Hoodie',
     price: 'RM 249',
-    image: '/placeholder-hoodie.jpg',
+    image: 'https://down-my.img.susercontent.com/file/my-11134207-7ras9-mbtgbn9f6j4nb4.webp',
     category: 'women'
   },
   {
     id: 3,
     name: 'Classic Jeans',
     price: 'RM 199',
-    image: '/placeholder-jeans.jpg',
+    image: 'https://down-my.img.susercontent.com/file/my-11134207-7ras9-mbtgbn9f6j4nb4.webp',
     category: 'men'
   },
   {
     id: 4,
     name: 'Elegant Dress',
     price: 'RM 299',
-    image: '/placeholder-dress.jpg',
+    image: 'https://down-my.img.susercontent.com/file/my-11134207-7ras9-mbtgbn9f6j4nb4.webp',
     category: 'women'
   },
 ];
 
 export default function Home() {
-  return (
-    <Layout>
-      {/* Hero Section */}
-      <section className="relative h-screen flex items-center justify-center bg-gray-100 overflow-hidden">
-        <div className="absolute inset-0 bg-black/30 z-10"></div>
-        <div className="bg-[url('/placeholder-hero.jpg')] bg-cover bg-center absolute inset-0"></div>
-        <div className="container mx-auto px-4 z-20 text-center">
-          <motion.h1 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="text-4xl md:text-6xl font-bold text-white mb-6"
-          >
-            Elevate Your Style
-          </motion.h1>
-          <motion.p 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-xl md:text-2xl text-white mb-8 max-w-2xl mx-auto"
-          >
-            Discover our premium collection of clothing designed for the modern individual.
-          </motion.p>
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-          >
-            <Link 
-              href="/shop" 
-              className="inline-flex items-center px-8 py-3 bg-white text-black font-medium hover:bg-gray-100 transition"
+    return (
+      <Layout>
+        {/* Hero Section */}
+        <section className="relative h-screen flex items-center justify-center bg-gray-100 overflow-hidden">
+          <div className="absolute inset-0 bg-black/30 z-10"></div>
+          <div className="bg-[url('/placeholder-hero.jpg')] bg-cover bg-center absolute inset-0"></div>
+          <div className="container mx-auto px-4 z-20 text-center">
+            <motion.h1 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              className="text-4xl md:text-6xl font-bold text-white mb-6"
             >
-              Shop Now <FiArrowRight className="ml-2" />
-            </Link>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Featured Products */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Featured Collection</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">Our carefully curated selection of premium clothing</p>
-          </div>
-          
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {products.map((product) => (
-              <motion.div 
-                key={product.id}
-                whileHover={{ y: -10 }}
-                transition={{ duration: 0.3 }}
-                className="group"
+              Elevate Your Style
+            </motion.h1>
+            <motion.p 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="text-xl md:text-2xl text-white mb-8 max-w-2xl mx-auto"
+            >
+              Discover our premium collection of clothing designed for the modern individual.
+            </motion.p>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
+            >
+              <Link 
+                href="/shop" 
+                className="inline-flex items-center px-8 py-3 bg-white text-black font-medium hover:bg-gray-100 transition"
               >
-                <div className="bg-gray-100 aspect-square overflow-hidden relative">
-                  <Image 
-                    src={product.image} 
-                    alt={product.name}
-                    className="w-full h-full object-cover group-hover:scale-105 transition duration-500"
-                  />
-                  <button className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black text-white px-6 py-2 opacity-0 group-hover:opacity-100 transition duration-300">
-                    Quick View
-                  </button>
-                </div>
-                <div className="mt-4">
-                  <h3 className="font-medium">{product.name}</h3>
-                  <p className="text-gray-600">{product.price}</p>
-                </div>
-              </motion.div>
-            ))}
+                Shop Now <FiArrowRight className="ml-2" />
+              </Link>
+            </motion.div>
           </div>
-
-          <div className="text-center mt-12">
-            <Link 
-              href="/shop" 
-              className="inline-flex items-center px-6 py-2 border border-black text-black font-medium hover:bg-black hover:text-white transition"
-            >
-              View All Products <FiArrowRight className="ml-2" />
-            </Link>
+        </section>
+  
+        {/* Featured Products */}
+        <section className="py-20 bg-white">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold mb-4">Featured Collection</h2>
+              <p className="text-gray-600 max-w-2xl mx-auto">Our carefully curated selection of premium clothing</p>
+            </div>
+            
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 product-card group">
+              {products.map((product) => (
+                <motion.div 
+                  key={product.id}
+                  whileHover={{ y: -10 }}
+                  transition={{ duration: 0.3 }}
+                  className="group"
+                >
+                  <div className="product-image-container aspect-square product-card group">
+                    <img 
+                      src={product.image} 
+                      alt={product.name}
+                      className="product-image group-hover:scale-105 w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                    />
+                    <button className="quick-view-btn group-hover:opacity-100 absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black text-white px-6 py-2 opacity-0 group-hover:opacity-100 transition duration-300">
+                      Quick View
+                    </button>
+                  </div>
+                  <div className="p-4">
+                    <h3 className="product-title">{product.name}</h3>
+                    <p className="product-price">{product.price}</p>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+  
+            <div className="text-center mt-12">
+              <Link 
+                href="/shop" 
+                className="inline-flex items-center px-6 py-2 border border-black text-black font-medium hover:bg-black hover:text-white transition"
+              >
+                View All Products <FiArrowRight className="ml-2" />
+              </Link>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
       {/* About Section */}
       <section className="py-20 bg-gray-100">
