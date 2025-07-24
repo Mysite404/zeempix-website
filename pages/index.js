@@ -2,6 +2,7 @@ import Layout from '../components/Layout';
 import { motion } from 'framer-motion';
 import { FiArrowRight } from 'react-icons/fi';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const products = [
   {
@@ -90,7 +91,7 @@ export default function Home() {
                 className="group"
               >
                 <div className="bg-gray-100 aspect-square overflow-hidden relative">
-                  <img 
+                  <Image 
                     src={product.image} 
                     alt={product.name}
                     className="w-full h-full object-cover group-hover:scale-105 transition duration-500"

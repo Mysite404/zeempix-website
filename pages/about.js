@@ -1,6 +1,7 @@
 import Layout from '../components/Layout';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function About() {
   return (
@@ -45,7 +46,7 @@ export default function About() {
               
               <div className="my-12">
                 <div className="bg-gray-100 aspect-video rounded-lg overflow-hidden mb-6">
-                  <img 
+                  <Image  
                     src="/placeholder-about-content.jpg" 
                     alt="Zeempix craftsmanship" 
                     className="w-full h-full object-cover"

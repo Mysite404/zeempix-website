@@ -2,6 +2,7 @@ import Layout from '../../components/Layout';
 import { FiChevronLeft, FiShoppingBag, FiHeart, FiShare2, FiStar } from 'react-icons/fi';
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function ProductDetail() {
   const [selectedSize, setSelectedSize] = useState('m');
@@ -57,7 +58,7 @@ export default function ProductDetail() {
             {/* Product Images */}
             <div className="lg:w-1/2">
               <div className="bg-gray-100 aspect-square rounded-lg overflow-hidden mb-4">
-                <img 
+                <Image 
                   src={product.images[activeImage]} 
                   alt={product.name}
                   className="w-full h-full object-cover"
@@ -70,7 +71,7 @@ export default function ProductDetail() {
                     onClick={() => setActiveImage(index)}
                     className={`aspect-square bg-gray-100 rounded overflow-hidden ${activeImage === index ? 'ring-2 ring-black' : ''}`}
                   >
-                    <img 
+                    <Image  
                       src={image} 
                       alt={`${product.name} ${index + 1}`}
                       className="w-full h-full object-cover"

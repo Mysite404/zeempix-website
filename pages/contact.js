@@ -1,6 +1,7 @@
 import Layout from '../components/Layout';
 import { motion } from 'framer-motion';
 import { FiMapPin, FiPhone, FiMail, FiClock } from 'react-icons/fi';
+import Image from 'next/image';
 
 export default function Contact() {
   return (

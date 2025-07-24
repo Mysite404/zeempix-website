@@ -2,6 +2,7 @@ import Layout from '../components/Layout';
 import { FiFilter, FiChevronDown, FiStar } from 'react-icons/fi';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const products = [
   // Same products array as in index.js plus more
@@ -158,7 +159,7 @@ export default function Shop() {
               >
                 <Link href={`/product/${product.id}`}>
                   <div className="bg-gray-100 aspect-square overflow-hidden relative rounded-lg">
-                    <img 
+                    <Image 
                       src={product.image} 
                       alt={product.name}
                       className="w-full h-full object-cover group-hover:scale-105 transition duration-500"
