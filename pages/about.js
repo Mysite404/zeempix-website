@@ -39,7 +39,7 @@ export default function About() {
               </p>
               
               <p className="mb-6">
-                At Zeempix, we believe that what you wear is an expression of who you are. That's why we meticulously craft each piece 
+                At Zeempix, we believe that what you wear is an expression of who you are. That&apos;s why we meticulously craft each piece 
                 to ensure it meets our high standards of quality, comfort, and style. From the selection of fabrics to the final stitch, 
                 every detail matters.
               </p>
@@ -58,7 +58,7 @@ export default function About() {
               <h3 className="text-2xl font-bold mb-4 mt-12">Our Philosophy</h3>
               
               <p className="mb-6">
-                We're committed to sustainable fashion practices. Our materials are carefully sourced from ethical suppliers, 
+                We&apos;re committed to sustainable fashion practices. Our materials are carefully sourced from ethical suppliers, 
                 and we prioritize environmentally friendly production methods without compromising on quality.
               </p>
               
@@ -66,7 +66,7 @@ export default function About() {
               
               <p className="mb-6">
                 As we grow, we remain dedicated to our core values of quality, sustainability, and innovation. 
-                We're excited to continue expanding our collections while maintaining the craftsmanship and attention 
+                We&apos;re excited to continue expanding our collections while maintaining the craftsmanship and attention 
                 to detail that define the Zeempix brand.
               </p>
               
