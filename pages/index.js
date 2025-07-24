@@ -91,7 +91,7 @@ export default function Home() {
                   className="group"
                 >
                   <div className="product-image-container aspect-square product-card group">
-                    <img 
+                    <Image 
                       src={product.image} 
                       alt={product.name}
                       className="product-image group-hover:scale-105 w-full h-full object-cover group-hover:scale-105 transition duration-500"

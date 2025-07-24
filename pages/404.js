@@ -1,7 +1,6 @@
 import Layout from '../components/Layout';
 import Link from 'next/link';
 import { FiArrowLeft } from 'react-icons/fi';
-import Image from 'next/image';
 
 export default function NotFound() {
   return (
